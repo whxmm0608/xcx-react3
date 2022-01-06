@@ -8,13 +8,15 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": "./",
-    "strict": true,
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
     },
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strict": false
   },
+  "noImplicitThis": false,
   "include": [
     "mock/**/*",
     "src/**/*",
